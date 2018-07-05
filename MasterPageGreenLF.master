@@ -1,0 +1,386 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageGreenLF.master.vb" Inherits="MasterPageGreenLF" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>eco HUNTER</title>
+
+
+    <link rel="stylesheet" type="text/css" href="~/StyleSheets/StyleSheet2.css" />
+    <style>
+        #masterTopBlock {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            left: 0px;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .cn1 {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .navBarSetUp {
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            ul.topnav li {
+                float: left;
+            }
+
+                ul.topnav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                    ul.topnav li a:hover:not(.active) {
+                        color: #86B24F;
+                    }
+
+                    ul.topnav li a.active {
+                        background-color: #BBB530;
+                    }
+
+                ul.topnav li.right {
+                    float: right;
+                }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3E432F;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #3E432F
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+
+        .logo-style {
+            width: 132px;
+            height: 60px;
+        }
+
+
+
+
+        .auto-style1 {
+            width: 100%;
+            height: 30px;
+        }
+
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: 99;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            min-height: 100%;
+            width: 100%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color: white">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="masterTopBlock" style="font-family: Calibri; color: #424531;">
+            <div id="mainTop" style="background-color: #86B24F;" class="auto-style1">
+                <div style="text-align: right; padding-right: 40px; padding-top: 5px;">
+                    <a href="../../../Login.aspx" style="color: #434332">
+                        <div style="display: inline-block;">
+                            <asp:Label ID="lblLogin" runat="server" Text="LOG OUT"></asp:Label>
+                        </div>
+                    </a>
+                    <div style="display: inline-block;">| </div>
+                    <div style="display: inline-block;"></div>
+                </div>
+                &nbsp
+            </div>
+            <div id="divHeader" style="padding-left: 40px; background-color: #3E432F; vertical-align: middle; padding-top: 10px; padding-bottom: 5px;" class="header">
+                <div style="display: inline-block"></div>
+
+                <div id="divMenuFarms" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="cn">
+
+                    <div>
+                        <div id="navBar" class="navBarSetUp">
+                            <ul class="topnav">
+                                <li><a runat="server" id="Dashboard" href="~/Farms/FarmDashboard.aspx">Dashboard | </a></li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A1" href="javascript:void(0)" class="dropbtn">Booking System | </a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A2" href="~/BookingSystem/FarmBookingManager.aspx">Manage Calendar</a>
+                                        <a runat="server" id="A3" href="~/BookingSystem/CalendarView.aspx">View Calendar</a>
+                                        <a runat="server" id="A4" href="~/BookingSystem/addEvent.aspx">Add Booking</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="topMember" href="javascript:void(0)" class="dropbtn">Profiles | </a>
+                                    <div class="dropdown-content">
+
+                                        <a runat="server" id="onlineProfile" href="~/Farms/farm_Edit_Profile.aspx">Manage Online Profile</a>
+                                        <a runat="server" id="manageAnimals" href="~/Farms/FarmAnimalManagement.aspx">Manage Animals</a>
+                                        <%-- <a runat="server" id="subUsers" href="~/Farms/ManageSubUsers.aspx">Manage Sub Users</a>--%>
+                                        <a runat="server" id="gallery" href="~/Farms/FarmManageGallery.aspx">Manage Gallery</a>
+
+                                    </div>
+                                </li>
+                                <li><a runat="server" id="A12" href="~/News/News.aspx">News | </a></li>
+                                <li><a runat="server" id="A14" href="~/Contact.aspx">Contact | </a></li>
+                                <li><a runat="server" id="A41" href="~/SetUp/PackageManager.aspx">Packages | </a></li>
+                                <li id="" class="right"><a runat="server" id="AccountProfile" href="~/Farms/FarmAccDetails.aspx">Account Profile</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="divMenuMember" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="cn">
+
+                    <div>
+                        <div id="navBar1" class="navBarSetUp">
+                            <ul class="topnav">
+                                <li><a runat="server" id="A5" href="~/Members/Dashboard.aspx">Dashboard | </a></li>
+                                <li><a runat="server" id="A6" href="~/Farms.aspx">Destinations | </a></li>
+                                <li><a runat="server" id="A27" href="~/Package_Search.aspx">Packages | </a></li>
+                                <li><a runat="server" id="A44" href="~/Outfitters.aspx">Outfitters | </a></li>
+                                <li><a runat="server" id="A7" href="~/Members.aspx">Hunters | </a></li>
+
+                                <%--<li><a runat="server" id="A8" href="~/Shop/HuntingSupplies.aspx" >Hunting Supplies | </a></li>--%>
+                                <%--<li><a runat="server" id="A9" href="~/Taxidermy/Taxidermy.aspx" >Taxidermy | </a></li>--%>
+                                <li><a runat="server" id="A43" href="~/Animals.aspx">Species | </a></li>
+                                <li><a runat="server" id="A10" href="~/Farms.aspx">Plan My Hunt | </a></li>
+                                <li><a runat="server" id="A11" href="~/Members/My_Hunts.aspx">My Hunts | </a></li>
+
+                                <li class="dropdown">
+                                    <a runat="server" id="A47" href="javascript:void(0)" class="dropbtn">Associations | </a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A48" href="~/Associations/Association_View.aspx">Associations</a>
+                                        <a runat="server" id="A49" href="~/Associations/CaptureEvent1.aspx">Register Event</a>
+                                    </div>
+                                </li>
+
+                                <li><a runat="server" id="A15" href="~/News/News.aspx">News | </a></li>
+                                <li><a runat="server" id="A16" href="~/Contact.aspx">Contact | </a></li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A36" href="javascript:void(0)" class="dropbtn">Member</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A37" href="~/Setup/MemberManager.aspx">Member Management</a>
+                                        <a runat="server" id="A38" href="~/Members/MemberManageGallery.aspx">Album Management</a>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="divMenuSuper" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="cn">
+
+                    <div>
+                        <div id="navBarSetUp" class="navbar">
+                            <ul class="topnav">
+                                <li><a runat="server" id="A17" href="~/SetUp/SetUp_Dashboard.aspx">Dashboard</a></li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A18" href="javascript:void(0)" class="dropbtn">Members</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="Member" href="~/SetUp/MemberManager.aspx">Member Management</a>
+                                        <a runat="server" id="Albums" href="~/Members/MemberManageGallery.aspx">Album Management</a>
+                                        <a runat="server" id="PreAuth" href="~/Approval/MemberApproval.aspx">Pre-Reg Auth</a>
+
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A35" href="javascript:void(0)" class="dropbtn">Farms</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A39" href="~/SetUp/FarmManager.aspx">Farm Manager</a>
+                                        <a runat="server" id="A40" href="~/SetUp/PackageManager.aspx">Packages</a>
+
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A51" href="javascript:void(0)" class="dropbtn">Outfitters</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A52" href="~/SetUp/OutfitterManager.aspx">Outfitter Manager</a>
+                                        <a runat="server" id="A53" href="~/SetUp/OutfitterPackageManager.aspx">Packages</a>
+
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="Association" href="javascript:void(0)" class="dropbtn">Associations</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A45" href="~/SetUp/AssociationManager.aspx">Associations</a>
+                                        <a runat="server" id="A46" href="~/SetUp/AssociationEvent.aspx">Event Attendance</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A19" href="javascript:void(0)" class="dropbtn">Setup</a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A20" href="~/SetUp/Animals_Capture.aspx">Animals</a>
+                                        <a runat="server" id="A21" href="~/SetUp/CertificationManager.aspx">Certificates</a>
+                                        <a runat="server" id="A26" href="~/SetUp/Country_Control.aspx">Country Control</a>
+                                        <a runat="server" id="A22" href="~/SetUp/Eco_Tourism_Manager.aspx">Eco Tourism</a>
+                                        <a runat="server" id="A24" href="~/SetUp/FacilityTypeManager.aspx">Facilities</a>
+                                        <a runat="server" id="A25" href="~/SetUp/HuntingTypeManager.aspx">Hunting Types</a>
+                                        <a runat="server" id="A23" href="~/SetUp/SetUp_EmailReceivers.aspx">Email Receivers</a>
+
+
+                                    </div>
+                                </li>
+                                <li><a runat="server" id="A8" href="~/SetUp/addNews.aspx">Add News</a></li>
+                                <li><a runat="server" id="UserManager" href="~/SetUp/UserManager.aspx">User Manager</a></li>
+                                <%-- <li><a runat="server" id="A42" href="~/SetUp/InitialLoad/initialLoad.aspx">Initial Farm Load</a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="divMenunotLoggedIn" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="auto-style2">
+
+                    <div>
+                        <div id="navBar3" class="navBarSetUp">
+                            <ul class="topnav">
+                                <%--<li><a runat="server" id="Home" href="~/Default.aspx" >Home | </a></li>
+                             
+                      <li><a runat="server" id="A26" href="~/News/News.aspx">News | </a></li>
+                        <li><a runat="server" id="A27" href="~/Contact.aspx">Contact | </a></li>
+                       <li id="" class="right"><a  runat="server" id="A28"  href="#AboutUs">About US</a></li> 
+                                --%>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="divMenuAss" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="cn">
+
+                    <div>
+                        <div id="navBarAss" class="navBarSetUp">
+                            <ul class="topnav">
+                                <li><a runat="server" id="A9" href="~/Associations/Association_Dashboard.aspx">Dashboard | </a></li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A29" href="javascript:void(0)" class="dropbtn">Association Admin | </a>
+                                    <div class="dropdown-content">
+                                        <a runat="server" id="A30" href="~/Associations/Association_Admin_Members.aspx">View Members</a>
+
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a runat="server" id="A31" href="javascript:void(0)" class="dropbtn">Events | </a>
+                                    <div class="dropdown-content">
+
+                                        <a runat="server" id="A32" href="~/Associations/Association_Event_Control.aspx">Event Control</a>
+                                        <a runat="server" id="A13" href="~/SetUp/AssociationEvent.aspx">Event Attendance</a>
+
+                                    </div>
+                                </li>
+                                <li><a runat="server" id="A33" href="~/News/News.aspx">News | </a></li>
+                                <li><a runat="server" id="A34" href="~/Contact.aspx">Contact | </a></li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="divMenuOutfitters" runat="server" style="display: inline-block; color: #FFFFFF; padding-left: 20px;" class="cn">
+
+                    <div>
+                        <div id="navBarO" class="navBarSetUp">
+                            <ul class="topnav">
+                                <li><a runat="server" id="A50" href="~/Members/Dashboard.aspx">Dashboard | </a></li>
+                                <%--<li class="dropdown">
+                            <a runat="server" id="A54" href="javascript:void(0)" class="dropbtn">Booking System | </a>
+                            <div class="dropdown-content">
+                                <a runat="server" id="A55" href="~/BookingSystem/FarmBookingManager.aspx">Manage Calendar</a>
+                                <a runat="server" id="A56" href="~/BookingSystem/CalendarView.aspx">View Calendar</a>
+                                 <a runat="server" id="A57" href="~/BookingSystem/addEvent.aspx">Add Booking</a>
+                            </div>
+                        </li>--%>
+                                <li class="dropdown">
+                                    <a runat="server" id="A58" href="javascript:void(0)" class="dropbtn">Profiles | </a>
+                                    <div class="dropdown-content">
+
+                                        <a runat="server" id="A59" href="~/Outfitters/outfitter_Edit_Profile1.aspx">Manage Online Profile</a>
+                                        <%--<a runat="server" id="A60" href="~/Farms/FarmAnimalManagement.aspx">Manage Animals</a>--%>
+                                        <%-- <a runat="server" id="subUsers" href="~/Farms/ManageSubUsers.aspx">Manage Sub Users</a>--%>
+                                        <%--<a runat="server" id="A61" href="~/Farms/FarmManageGallery.aspx">Manage Gallery</a>--%>
+                                    </div>
+                                </li>
+                                <li><a runat="server" id="A62" href="~/News/News.aspx">News | </a></li>
+                                <li><a runat="server" id="A63" href="~/Contact.aspx">Contact | </a></li>
+                                <li><a runat="server" id="A64" href="~/SetUp/PackageManager.aspx">Packages | </a></li>
+                                <li id="" class="right"><a runat="server" id="A65" href="~/Farms/FarmAccDetails.aspx">Account Profile</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="padding-left: 40px; background-color: #FFFFFF;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+        <div>
+        </div>
+
+    </form>
+</body>
+</html>

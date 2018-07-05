@@ -1,0 +1,31 @@
+﻿body {
+    background-color: #394025;
+    margin:0;
+}
+
+.filterline {
+    padding: 5px;
+    border-width: thin;
+    border-color: #99b37a;
+    border-bottom-style: solid;
+    font-size: 101px;
+    display: inline-block;
+    width: 96%;
+    cursor: pointer;
+    background-color: #5B6849;
+    vertical-align: middle;
+    font-size: medium;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.button {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #8d9296;
+    color: #a3a3a3;
+    padding: 4px;
+    background-color: #7DB15C;
+    color: white;
+}

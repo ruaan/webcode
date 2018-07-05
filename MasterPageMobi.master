@@ -1,0 +1,242 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageMobi.master.vb" Inherits="MasterPageMobi" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Eco_Hunter</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="~/StyleSheets/StyleSheet2.css" />
+    <link rel="stylesheet" type="text/css" href="~/StyleSheets/StyleSheetMobi.css" />
+    <style>
+        .body {
+            margin: 0;
+        }
+
+        #masterTopBlock {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            left: 0px;
+        }
+
+        .header {
+            position: relative;
+        }
+
+        .cn {
+            font-family: Calibri;
+            text-align: left;
+        }
+
+        .cn1 {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .navBarSetUp {
+            /*font-size: 48px;*/
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            ul.topnav li {
+                float: left;
+            }
+
+                ul.topnav li a {
+                    display: block;
+                    color: #333333;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                    ul.topnav li a:hover:not(.active) {
+                        color: #86B24F;
+                    }
+
+                    ul.topnav li a.active {
+                        background-color: #BBB530;
+                    }
+
+                ul.topnav li.right {
+                    float: right;
+                }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3E432F;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #3E432F
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .logo-style {
+            /*width: 132px;
+            height: 60px;*/
+        }
+
+        .auto-style2 {
+            width: 100%;
+            height: 50px;
+        }
+
+        .auto-style4 {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+
+</head>
+<body id="MasterPageBodyTag" runat="server" style="margin: 0;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <div id="mainHeader">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="border-bottom-style: solid; border-width: thick; border-color: #99B37A; background-color: #99B37A">
+                                <table class="auto-style2">
+                                    <tr>
+                                        <td width="15%">
+                                            <div id="MenuBtn" runat="server" style="padding-left: 5px">
+                                                <img id="btnMenu" src='../../../../../Images/app/humburger.png' alt="Menu" onclick="Menu()" class="auto-style4" /></div>
+                                        </td>
+                                        <td style="width: 30%;" align="left">&nbsp;</td>
+                                        <td align="right">
+                                            <table style="width: 60px; text-align: right;">
+                                                <tr>
+                                                    <td align="left" style="color: #00CC00; font-weight: normal;">
+                                                    &nbsp;
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <div id="BodyContainer">
+            <table style="width: 100%; border-collapse: collapse; border-spacing: 0px;">
+                <tr>
+                    <td valign="top">
+
+
+                        <div id="divMenu" runat="server" style="display: none; color: #333333; padding-left: 10px; width: 120px; background-color: #F8F8F8;" class="cn">
+                            <div>
+                                <div id="navBar1" class="navBarSetUp">
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A5" href="~/Members/Dashboard_Mobi.aspx">Dashboard</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A6" href="~/Farms_Mobi.aspx">Destinations</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A44" href="~/Outfitters_Mobi.aspx">Outfitters</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A7" href="~/Members_Mobi.aspx">Hunters</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A43" href="~/Animals_Mobi.aspx">Species</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A10" href="~/Farms_Mobi.aspx">Plan My Hunt</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A11" href="~/Members/My_Hunts_Mobi.aspx">My Hunts</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A13" href="~/Associations/Association_View_Mobi.aspx">Associations</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A15" href="~/News/News_Mobi.aspx">News</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A16" href="~/Contact_Mobi.aspx">Contact</a></li>
+                                    </ul>
+                                    <ul class="topnav">
+                                        <li><a runat="server" id="A1" href="~/LoginMobi.aspx">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td valign="top">
+                        <table onmouseover="CloseAll()">
+                            <tr>
+                                <td>
+                                    <div>
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script type="text/javascript">
+        function Menu() {
+            var x = document.getElementById("divMenu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function CloseAll() {
+            var x = document.getElementById("divMenu");
+            x.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

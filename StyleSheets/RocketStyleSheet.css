@@ -1,0 +1,159 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #5D5D9E;
+}
+
+    a:visited {
+        color: #5D5D9E;
+    }
+
+    a:active {
+        color: #5C615E;
+    }
+
+    a:hover {
+        color: #B2B3B4;
+    }
+
+
+
+.textstyle1 {
+    text-align: left;
+}
+
+#container_14de6854 {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 150px;
+    background: none;
+}
+
+#container_14de6854_padding {
+    margin: 10px;
+    display: block;
+}
+
+#container_28787caa {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    min-height: 150px;
+    background: none;
+}
+
+#container_28787caa_padding {
+    margin: 10px;
+    display: block;
+}
+
+#text_7fa5239b {
+    position: absolute;
+    left: 9%;
+    top: 14%;
+    background: none;
+}
+
+.textstyle2 {
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+#container_e90d421 {
+    position: absolute;
+    left: 0%;
+    top: 32%;
+    width: 100%;
+    min-height: 81px;
+    background-color: #0080FF;
+}
+
+#container_e90d421_padding {
+    margin: 10px;
+    display: block;
+}
+
+#container_2145fd1 {
+    position: absolute;
+    left: 0%;
+    top: 7%;
+    width: 8%;
+    min-height: 37px;
+    background-color: #008040;
+}
+
+#container_2145fd1_padding {
+    margin: 10px;
+    display: block;
+}
+
+#container_6e9e2c54 {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    min-height: 150px;
+    background: none;
+}
+
+#container_6e9e2c54_padding {
+    margin: 10px;
+    display: block;
+}
+
+#container_52d50cb9 {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 137px;
+    background: none;
+}
+
+#container_52d50cb9_padding {
+    margin: 10px;
+    display: block;
+}
+
+#text_714e5a50 {
+    position: absolute;
+    left: 3%;
+    top: 29%;
+    background: none;
+}
+
+.textstyle3 {
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+#container_17f3bcff {
+    position: absolute;
+    left: 2%;
+    top: 56%;
+    width: 102%;
+    min-height: 62px;
+    background: none;
+}
+
+#container_17f3bcff_padding {
+    margin: 10px;
+    display: block;
+}
+
+@media only screen and (max-width: 300px) {
+    #container_28787caa {
+        width: 100%;
+    }
+
+    #container_6e9e2c54 {
+        width: 100%;
+    }
+}

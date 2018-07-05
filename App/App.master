@@ -1,0 +1,78 @@
+﻿<%@ Master Language="VB" CodeFile="App.master.vb" Inherits="App_App" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+        #mybody {
+    background: url('http://197.101.38.171/Images/app/ecoappBg1.gif') no-repeat center left; /*You will specify your image path here.*/
+   background-size: 100% 100%;
+width: 100%;
+height: 100%;
+height: auto;
+min-height:100%; 
+
+  }
+
+        #mainPageWrapper {
+    text-align: center;
+}
+
+.div_MainBlock {
+    margin: 0 auto;
+}
+        
+        .opacityStyle{
+            opacity:0.7;
+        }
+        .auto-style8 {
+            width: 10%;
+        }
+        .auto-style9 {
+            width: 33px;
+            height: 49px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="mybody">
+    <form id="form1" runat="server">
+    <div id="mainPageWrapper" style="align-content: center;" onload="thisonload()">
+        <div class="div_MainBlock" >
+                       <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="background-color: #85B14F">
+                                <td align="left" class="auto-style8">
+                                    <img alt="" src="../Images/app/ecoMenu.gif" class="auto-style9" /></td>
+                                <td><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logos/eco-hunter-log-small.png" Width="122px" Height="46px" /></td>
+                                <td  class="auto-style8">&nbsp;</td>
+                            </tr>
+                            </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+               
+            </table>
+        
+    </div>
+        </div>
+    </form>
+</body>
+</html>

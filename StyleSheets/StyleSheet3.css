@@ -1,0 +1,360 @@
+﻿body {
+    font-family: Calibri;
+}
+
+.panel {
+    border-color: #666666;
+    border-style: Solid;
+    border-width: 2px;
+}
+
+.LineButton {
+    background-color: White;
+    border-style: none;
+    color: #009900;
+    cursor: pointer;
+}
+
+
+    .LineButton:hover {
+        color: #6A6A6A;
+    }
+
+.NormalTable {
+    font-size: Small;
+}
+
+.normalButton {
+    font-family: Calibri;
+    color: #009900;
+}
+
+.LineDevider {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: #666666;
+}
+
+.LineDeviderGreen {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: #009900;
+}
+
+.PageHeader {
+    font-size: x-large;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ImageLoading {
+    height: 85px;
+    width: 85px;
+}
+
+#slide {
+    border: 1px solid black;
+    width: 0px;
+    transition: width 500ms ease;
+    -moz-transition: width 500ms ease;
+    -ms-transition: width 500ms ease;
+    -o-transition: width 500ms ease;
+    -webkit-transition: width 500ms ease;
+}
+
+
+#level1 {
+    border: 1px solid black;
+    width: 0px;
+    transition: width 500ms ease;
+    -moz-transition: width 500ms ease;
+    -ms-transition: width 500ms ease;
+    -o-transition: width 500ms ease;
+    -webkit-transition: width 500ms ease;
+}
+
+#level2 {
+    border: 1px solid black;
+    width: 0px;
+    transition: width 500ms ease;
+    -moz-transition: width 500ms ease;
+    -ms-transition: width 500ms ease;
+    -o-transition: width 500ms ease;
+    -webkit-transition: width 500ms ease;
+}
+
+#SlideScroller {
+    width: 260px;
+}
+
+    #SlideScroller:after {
+        width: 260px;
+    }
+
+#Slide1Scroller {
+    width: 260px;
+}
+
+#Slide2Scroller {
+    width: 280px;
+}
+
+    #Slide2Scroller:after {
+        width: 280px;
+    }
+
+
+.LineDevider {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: #666666;
+}
+
+
+
+.MenuLineButton {
+    background-color: #bccd36;
+    border-style: none;
+    color: #666666;
+    cursor: pointer;
+}
+
+
+    .MenuLineButton:hover {
+        /*color: #6A6A6A ;*/
+        color: White;
+        text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    }
+
+
+.Level1LineButton {
+    background-color: #bccd36;
+    border-style: none;
+    color: #3e3c3c;
+    cursor: pointer;
+}
+
+    .Level1LineButton:hover {
+        color: White;
+        text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    }
+
+
+.Level2LineButton {
+    background-color: #51862D;
+    border-style: none;
+    color: White;
+    cursor: pointer;
+}
+
+    .Level2LineButton:hover {
+        color: White;
+        text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    }
+
+#btnMenu {
+    src: "Image/Look_Feel2/look2_66.png";
+    cursor: pointer;
+}
+
+.GridviewScrollHeader TH, .GridviewScrollHeader TD {
+    padding: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    background-color: #EFEFEF;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.GridviewScrollItem TD {
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+
+.GridviewScrollItem .Freeze {
+    background-color: #EFEFEF;
+}
+
+.GridviewScrollItemHover TD {
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+.GridviewScrollItemHover .Freeze {
+    background-color: #CCCCCC;
+}
+
+.GridviewScrollItemSelected TD {
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    background-color: #999999;
+    color: #FFFFFF;
+}
+
+.GridviewScrollItemSelected .Freeze {
+    background-color: #999999;
+}
+
+.GridviewScrollPager {
+    border-top: 1px solid #AAAAAA;
+    background-color: #FFFFFF;
+}
+
+    .GridviewScrollPager TD {
+        padding-top: 3px;
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .GridviewScrollPager A {
+        color: #666666;
+    }
+
+    .GridviewScrollPager SPAN {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.divWaiting {
+    position: absolute;
+    background-color: #FAFAFA;
+    z-index: 2147483647 !important;
+    opacity: 0.8;
+    overflow: hidden;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+    display: none;
+}
+
+
+.fancy-green .ajax__tab_header {
+    background: url(../../Image/Look_Feel2/green_bg_Tab.gif) repeat-x;
+    cursor: pointer;
+}
+
+.fancy-green .ajax__tab_hover .ajax__tab_outer, .fancy-green .ajax__tab_active .ajax__tab_outer {
+    background: url(../../Image/Look_Feel2/green_left_Tab.gif) no-repeat left top;
+}
+
+.fancy-green .ajax__tab_hover .ajax__tab_inner, .fancy-green .ajax__tab_active .ajax__tab_inner {
+    background: url(../../Image/Look_Feel2/green_right_Tab.gif) no-repeat right top;
+}
+
+.fancy .ajax__tab_header {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+
+    .fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_header .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer {
+        height: 46px;
+        color: #fff;
+    }
+
+    .fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_header .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner {
+        height: 46px;
+        margin-left: 16px; /* offset the width of the left image */
+    }
+
+    .fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_header .ajax__tab_tab {
+        margin: 16px 16px 0px 0px;
+    }
+
+.fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_active .ajax__tab_tab {
+    color: #fff;
+}
+
+.fancy .ajax__tab_body {
+    font-family: Arial;
+    font-size: 10pt;
+    border-top: 0;
+    border: 1px solid #999999;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+.mobi_btn_green {
+    /* Round 1 */
+    border: 1px solid #666;
+    cursor: pointer;
+    display: block;
+    margin: 1px auto 0;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    height: 50px;
+    /* Round 2 */
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background: #bccd36;
+    background-image: -moz-linear-gradient(top, #bccd36, #157f44);
+    background-image: -o-linear-gradient(top, #bccd36, #157f44);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#bccd36), to(#157f44));
+    background-image: linear-gradient(top, #bccd36, #157f44);
+    border-radius: 15px;
+    color: #FFF;
+    font-size: .75em;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #444;
+}
+
+.form-control {
+    background-color: #f5f5f5;
+    box-shadow: none;
+    color: #565656;
+    Font-Size: 48px;
+    Height: 49px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+    .form-control,
+    .form-control:focus {
+        border: 1px solid #e8e8e8;
+    }
+
+.form-active .form-control:invalid {
+    border-color: red;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+﻿body {
+    background-image: url('http://www.naudeonline.co.za/Images/body-top.jpg'); /*You will specify your image path here.*/
+    -webkit-appearance: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* to remove the default white margin of body */
+    padding: 0; /* to remove the default white margin of body */
+    font-family: Calibri;
+    color: #a3a3a3;
+}
+
+.textbox {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #8d9296;
+    background-color: #4a4d4f;
+    color: #a3a3a3;
+    padding: 4px;
+}
+
+.button {
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #ffd42a;
+    color: #272727;
+    padding: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.panel {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 2px none #8d9296;
+    background-color: #494D50;
+    
+    padding: 4px;
+}
+
+.nextPrevButton {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: #bbb530;
+    color: #272727;
+    padding: 8px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.yellowHeader {
+    color: #bbb530;
+    font-size:medium;
+    font-weight:bold;
+}
+
+.deviderLine {
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: #bbb530;
+}
+.lineButton {
+    background-color: #494D50;
+    border-style: none;
+    color: #bbb530;
+    cursor: pointer;
+}
+
+.h1{
+    font-size:xx-large;
+}
+.navbar {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5c5c5c), to(#414141));
+    background: -webkit-linear-gradient(top, #5c5c5c, #414141);
+    background: -moz-linear-gradient(top, #5c5c5c, #414141);
+    background: -ms-linear-gradient(top, #5c5c5c, #414141);
+    background: -o-linear-gradient(top, #5c5c5c, #414141);
+    border-top: 1px solid #676767;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+}
+
+
+.divMainContainer {
+    display: inline-block;
+    width: 60%;
+}
+
+.divFormMng {
+    display: inline-block;
+}
+
+.divContainer {
+    
+    border-bottom-color: #494D50;
+    border-bottom-style:solid;
+    border-bottom-width:thin;
+    border-bottom:solid;
+    border-top:solid;
+    border-left:solid;
+    border-right:solid;
+}
+
+
+
+.fancy-green .ajax__tab_header {
+    background: url(../../Images/TabImages/green_bg_Tab.gif) repeat-x;
+    cursor: pointer;
+}
+
+.fancy-green .ajax__tab_hover .ajax__tab_outer, .fancy-green .ajax__tab_active .ajax__tab_outer {
+    background: url(../../Images/TabImages/green_left_Tab.gif) no-repeat left top;
+}
+
+.fancy-green .ajax__tab_hover .ajax__tab_inner, .fancy-green .ajax__tab_active .ajax__tab_inner {
+    background: url(../../Images/TabImages/green_right_Tab.gif) no-repeat right top;
+}
+
+.fancy .ajax__tab_header {
+    font-size: 13px;
+    font-weight: bold;
+    color: #494D50;
+    font-family: sans-serif;
+}
+
+    .fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_header .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer {
+        height: 46px;
+        color: #494D50;
+    }
+
+    .fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_header .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner {
+        height: 46px;
+        margin-left: 16px; /* offset the width of the left image */
+    }
+
+    .fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_header .ajax__tab_tab {
+        margin: 16px 16px 0px 0px;
+    }
+
+.fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_active .ajax__tab_tab {
+    color: #fff;
+}
+
+.fancy .ajax__tab_body {
+    font-family: Arial;
+    font-size: 10pt;
+    border-top: 0;
+    border: 1px solid #bbb530;
+    padding: 8px;
+    background-color: #494D50;
+}
+
+.divMainContainerBackgroundColour {
+    background-color: #494D50;
+}

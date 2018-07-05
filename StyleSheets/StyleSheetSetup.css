@@ -1,0 +1,18 @@
+﻿.divFormMng {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.divMainContainer {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+.divPagewide {
+    vertical-align: top;
+}
+
+.divMainContainerBackgroundColour {
+    background-color: #494D50;
+}
